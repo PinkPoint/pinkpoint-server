@@ -8,7 +8,7 @@
 module.exports = {
 
 	attributes: {
-		date: 'date'
+		date: 'date',
 		climber: {
 			model: 'user'
 		},
