@@ -9,7 +9,7 @@ module.exports = {
 	attributes: {
 		firstName: 'string',
 		lastName: 'string',
-		
+
 		ascents: {
 			collection: 'ascent',
 			via: 'climber'
