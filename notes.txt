@@ -1,0 +1,8 @@
+missing dev dependencies: (why?)
+- mocha
+- sails-memory
+- barrels
+- supertest
+- should
+
+http://stackoverflow.com/questions/17742781/keyboard-shortcut-to-comment-lines-in-sublime-text-3

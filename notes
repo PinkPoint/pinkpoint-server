@@ -1,6 +1,0 @@
-missing dev dependencies: (why?)
-- mocha
-- sails-memory
-- barrels
-- supertest
-- should
