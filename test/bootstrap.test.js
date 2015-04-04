@@ -5,7 +5,7 @@ var Sails = require('sails');
 
     // apparently the default timeout of mocha is 2000ms and it seems
     // to take longer to lift sails, that's why we raise the timeout here:
-    this.timeout(5000);
+    this.timeout(10000);
 
     // Lift Sails with test database
     Sails.lift({

@@ -1,0 +1,62 @@
+{
+	"id": "173b5da0-0124-6f3a-a73c-6261f9b084b0",
+	"name": "kletterzentrum",
+	"description": "",
+	"order": [
+		"68511d4f-4ea5-f0f6-e356-753e932f3873",
+		"1421f1d8-0059-bec7-639a-1ca85b97acc4"
+	],
+	"folders": [],
+	"timestamp": 1428137631228,
+	"synced": false,
+	"owner": "",
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "1421f1d8-0059-bec7-639a-1ca85b97acc4",
+			"headers": "",
+			"url": "http://www.kletterzentrum.com/ueber-uns/routenbau/routenfinder/?tx_kletroute_kletroutefilter%5Baction%5D=doFilter&tx_kletroute_kletroutefilter%5Bcontroller%5D=Route&tx_kletroute_kletroutefilter%5Bfilter%5D%5Blocation%5D=2&tx_kletroute_kletroutefilter%5Bfilter%5D%5Bcategory%5D%5B65%5D=0&tx_kletroute_kletroutefilter%5Bfilter%5D%5Bcategory%5D%5B10%5D=0&type=1390811741&tx_kletroute_kletroutefilter[offset]=0&tx_kletroute_kletroutefilter[limit]=1000",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "173b5da0-0124-6f3a-a73c-6261f9b084b0",
+			"data": [],
+			"dataMode": "params",
+			"name": "Routes Milandia",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1428137755824,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false
+		},
+		{
+			"id": "68511d4f-4ea5-f0f6-e356-753e932f3873",
+			"headers": "",
+			"url": "http://www.kletterzentrum.com/ueber-uns/routenbau/routenfinder/?tx_kletroute_kletroutefilter%5Baction%5D=doFilter&tx_kletroute_kletroutefilter%5Bcontroller%5D=Route&tx_kletroute_kletroutefilter%5Bfilter%5D%5Blocation%5D=1&tx_kletroute_kletroutefilter%5Bfilter%5D%5Bcategory%5D%5B65%5D=0&tx_kletroute_kletroutefilter%5Bfilter%5D%5Bcategory%5D%5B10%5D=0&type=1390811741&tx_kletroute_kletroutefilter[offset]=0&tx_kletroute_kletroutefilter[limit]=1000",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "173b5da0-0124-6f3a-a73c-6261f9b084b0",
+			"data": [],
+			"dataMode": "params",
+			"name": "Routes Gaswerk",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1428137631228,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"synced": false
+		}
+	]
+}
