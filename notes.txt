@@ -1,4 +1,6 @@
-missing dev dependencies: (why?)
+- execute 'sails lift' to get the server up and running and use the requests in postman folder 
+
+missing dev dependencies in package.json: (why?)
 - mocha
 - sails-memory
 - barrels
@@ -6,3 +8,10 @@ missing dev dependencies: (why?)
 - should
 
 http://stackoverflow.com/questions/17742781/keyboard-shortcut-to-comment-lines-in-sublime-text-3
+
+http://www.tysoncadenhead.com/blog/unit-testing-sails-js-applications-with-mocha#.VR7_YfysVnE
+http://sailsjs.org/#!/documentation/concepts/Testing
+https://github.com/visionmedia/supertest
+https://github.com/bredikhin/sailsjs-mocha-testing-barrels-fixtures-example
+http://shouldjs.github.io/#assertion-empty
+https://github.com/balderdashy/sails-docs/blob/0.9/services.md

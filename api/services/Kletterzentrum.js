@@ -18,8 +18,8 @@ exports.getRoutes = function(options) {
         //the whole response has been recieved, so we just print it out here
         response.on('end', function() {
             var routes = JSON.parse(routesFromKletterzentrum);
-            console.log(routes);
-            options.callback(routes.data);
+            // console.log(routes);
+            options.callback(routes.items);
         });
     };
 
