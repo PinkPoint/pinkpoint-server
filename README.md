@@ -3,12 +3,12 @@
 An application for easily tracking climbing routes.
 
 Host application (api):
-	sails lift
+    sails lift
 
 Execute the request in folder postman against the running application.
 
 Run tests:
-	mocha
+    mocha
 
 For some weird reasons some dependencies were not added as dev dependencies in package.json:
 - mocha
