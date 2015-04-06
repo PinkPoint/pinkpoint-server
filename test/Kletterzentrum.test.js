@@ -50,4 +50,28 @@ describe('KletterzentrumService', function() {
 
 		Kletterzentrum.getRoutes(options);
 	});
+
+	it('should map all routes', function(done) {
+		this.timeout(10000);
+		
+		var handleRoutes = function(routes) {
+
+			// console.log(routes);
+			console.log('KletterzentrumService delivered ' + routes.length + ' routes.');
+			routes.should.be.array;
+			routes.length.should.be.greaterThan(0);
+
+			var mappedRoutes = Kletterzentrum.mapRoutes(routes);
+
+			console.log(mappedRoutes);
+
+			done();
+		};
+
+		var options = {
+			callback: handleRoutes
+		};
+
+		Kletterzentrum.getRoutes(options);
+	});
 });

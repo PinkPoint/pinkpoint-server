@@ -1,4 +1,5 @@
 // Kletterzentrum.js - in api/services
+// todo: promisify, e.g. like this https://github.com/petkaantonov/bluebird/issues/196
 exports.getRoutes = function(options) {
     var http = require('http');
 
@@ -24,4 +25,20 @@ exports.getRoutes = function(options) {
     };
 
     http.request(requestOptions, callback).end();
+};
+
+exports.mapRoute = function(source) {
+    return {
+        builder: source.builder,
+        difficulty: source.difficulty,
+        gripColor: source.gripcolor,
+        name: source.title,
+        sector: source.sector,
+        sourceId: source.uid,
+        tag: source.nr
+    };
+};
+
+exports.mapRoutes = function(routes) {
+    return routes.map(exports.mapRoute);
 };
