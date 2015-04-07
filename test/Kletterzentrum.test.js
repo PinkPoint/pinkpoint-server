@@ -55,6 +55,8 @@ describe('KletterzentrumService', function() {
 		this.timeout(10000);
 		
 		Kletterzentrum.importRoutes();
-		done();
+
+		// todo: how to wait for the end of the import?
+		// done();
 	});
 });

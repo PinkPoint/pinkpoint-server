@@ -46,15 +46,20 @@ exports.mapRoutes = function(routes) {
 exports.importRoutes = function() {
     var options = {
         callback: function(routesFromKletterzentrum) {
-            console.log(routesFromKletterzentrum);
+            // console.log(routesFromKletterzentrum);
 
             var routes = Kletterzentrum.mapRoutes(routesFromKletterzentrum);
 
-            console.log(routes);
+            // console.log(routes);
 
             routes.forEach(function(route) {
-                Route.findOrCreate({ sourceId: route.sourceId }, route);
-                console.log('processed route ' + route.name);
+                Route.findOrCreate({ sourceId: route.sourceId }, route).exec(function createFindCB(err, record){
+                    if (!err){
+                        console.log('Processed route ' + record.name);
+                    } else {
+                        console.log('Error ' + err);
+                    };
+                });
             });
         }
     };
