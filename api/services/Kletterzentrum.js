@@ -29,7 +29,7 @@ exports.getRoutes = function(options) {
 
 exports.mapRoute = function(source) {
     return {
-        builder: source.builder,
+        builder: source.builders,
         difficulty: source.difficulty,
         gripColor: source.gripcolor,
         name: source.title,
@@ -46,10 +46,15 @@ exports.mapRoutes = function(routes) {
 exports.importRoutes = function() {
     var options = {
         callback: function(routesFromKletterzentrum) {
+            console.log(routesFromKletterzentrum);
+
             var routes = Kletterzentrum.mapRoutes(routesFromKletterzentrum);
+
+            console.log(routes);
 
             routes.forEach(function(route) {
                 Route.findOrCreate({ sourceId: route.sourceId }, route);
+                console.log('processed route ' + route.name);
             });
         }
     };
