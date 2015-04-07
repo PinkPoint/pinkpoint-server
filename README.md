@@ -9,10 +9,3 @@ Execute the requests in folder postman against the running application.
 
 Run tests:
     `mocha`
-
-For some weird reasons some dependencies were not added as dev dependencies in package.json:
-- mocha
-- sails-memory
-- barrels
-- supertest
-- should

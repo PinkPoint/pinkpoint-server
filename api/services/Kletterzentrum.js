@@ -40,5 +40,19 @@ exports.mapRoute = function(source) {
 };
 
 exports.mapRoutes = function(routes) {
-    return routes.map(exports.mapRoute);
+    return routes.map(Kletterzentrum.mapRoute);
+};
+
+exports.importRoutes = function() {
+    var options = {
+        callback: function(routesFromKletterzentrum) {
+            var routes = Kletterzentrum.mapRoutes(routesFromKletterzentrum);
+
+            routes.forEach(function(route) {
+                Route.findOrCreate({ sourceId: route.sourceId }, route);
+            });
+        }
+    };
+
+    Kletterzentrum.getRoutes(options);
 };
