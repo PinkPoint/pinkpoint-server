@@ -19,7 +19,6 @@ exports.getRoutes = function(options) {
         //the whole response has been recieved, so we just print it out here
         response.on('end', function() {
             var routes = JSON.parse(routesFromKletterzentrum);
-            // console.log(routes);
             options.callback(routes.items);
         });
     };
@@ -46,15 +45,12 @@ exports.mapRoutes = function(routes) {
 exports.importRoutes = function() {
     var options = {
         callback: function(routesFromKletterzentrum) {
-            // console.log(routesFromKletterzentrum);
-
             var routes = Kletterzentrum.mapRoutes(routesFromKletterzentrum);
-
-            // console.log(routes);
 
             routes.forEach(function(route) {
                 Route.findOrCreate({ sourceId: route.sourceId }, route).exec(function createFindCB(err, record){
                     if (!err){
+                        // todo: how to differ between found or create?
                         console.log('Processed route ' + record.name);
                     } else {
                         console.log('Error ' + err);
