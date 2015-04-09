@@ -15,11 +15,13 @@
 	"folders": [],
 	"timestamp": 1428096279531,
 	"synced": false,
-	"owner": "",
+	"owner": 0,
 	"subscribed": false,
 	"remoteLink": "",
 	"public": false,
 	"write": true,
+	"sharedWithTeam": false,
+	"hasRequests": true,
 	"requests": [
 		{
 			"id": "05e94de0-b7e0-57ac-e67e-9642dbc575fc",
@@ -39,28 +41,27 @@
 			"description": "",
 			"collectionId": "ffe6ef00-f866-e194-a9ee-5653f86ad14b",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": 0
 		},
 		{
 			"id": "0d4d09b7-3a4b-90e6-36dd-28d34bc2a497",
 			"headers": "",
-			"url": "http://localhost:1337/ascent/create?date=03.04.2015&climer=1&route=1",
-			"pathVariables": {},
+			"url": "http://localhost:1337/ascent/create?date=03.04.2015&climber=1&route=1",
 			"preRequestScript": "",
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "ffe6ef00-f866-e194-a9ee-5653f86ad14b",
 			"data": [],
 			"dataMode": "params",
-			"name": "Add Ascent",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1428097039861,
 			"version": 2,
-			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"collectionOwner": 0,
+			"time": 1428569846881,
+			"name": "Add Ascent",
+			"description": "",
+			"collectionId": "ffe6ef00-f866-e194-a9ee-5653f86ad14b",
+			"responses": [],
 			"synced": false
 		},
 		{
@@ -81,7 +82,8 @@
 			"description": "",
 			"collectionId": "ffe6ef00-f866-e194-a9ee-5653f86ad14b",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": 0
 		},
 		{
 			"id": "79aa02ec-eae1-737b-8178-9155d4242773",
@@ -103,7 +105,8 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionOwner": 0,
-			"synced": false
+			"synced": false,
+			"owner": 0
 		},
 		{
 			"id": "b49175e2-a4c9-e4cc-44fd-11a8992b9755",
@@ -124,7 +127,8 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"synced": false
+			"synced": false,
+			"owner": 0
 		},
 		{
 			"id": "b82f3be9-a6ca-f747-d864-96ffd71ab2b6",
@@ -146,7 +150,8 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionOwner": 0,
-			"synced": false
+			"synced": false,
+			"owner": 0
 		},
 		{
 			"id": "e70f92c5-2e37-0e03-e401-424869aaf548",
@@ -168,7 +173,8 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionOwner": 0,
-			"synced": false
+			"synced": false,
+			"owner": 0
 		},
 		{
 			"id": "ea5cf88d-9b0f-fed3-5b52-ef57ba81ab46",
@@ -190,7 +196,8 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionOwner": 0,
-			"synced": false
+			"synced": false,
+			"owner": 0
 		}
 	]
 }

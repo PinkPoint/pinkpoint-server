@@ -2,6 +2,9 @@
 
 An application for easily tracking climbing routes.
 
+Prepare:
+    `npm install -g sails`
+
 Host application / api:
     `sails lift`
 
