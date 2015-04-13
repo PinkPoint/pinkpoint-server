@@ -4,24 +4,25 @@ An application for easily tracking climbing routes.
 
 Prepare:
 
-    `npm install -g sails`
+    npm install -g sails
     
-    `npm install`
+    
+    npm install
 
 Host application / api:
 
-    `sails lift`
+    sails lift
 
 Run tests:
 
-    `mocha`
+    mocha
 
 In order to import the routes from Kletterzentrum, run:
 
-	`sails console`
+    sails console
 	
 	and
 	
-	`Kletterzentrum.importRoutes();`
+    Kletterzentrum.importRoutes();
 
 Execute the requests in folder postman against the running application.
