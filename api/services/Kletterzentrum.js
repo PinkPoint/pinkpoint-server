@@ -28,8 +28,10 @@ exports.getRoutes = function(options) {
 
 exports.mapRoute = function(source) {
     return {
+        buildDate: source.builddateFormatted,
         builder: source.builders,
         difficulty: source.difficulty,
+        difficultyColor: source.difficultyColor,
         gripColor: source.gripcolor,
         name: source.title,
         sector: source.sector,

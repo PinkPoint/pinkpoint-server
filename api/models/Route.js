@@ -7,8 +7,10 @@
 
 module.exports = {
     attributes: {
+        buildDate: 'string',
         builder: 'string',
         difficulty: 'string',
+        difficultyColor: 'string',
         gripColor: 'string',
         name: 'string',
         sector: 'string',
