@@ -6,6 +6,10 @@
  */
 
 module.exports = {
-	
+	import: function (req, res) {
+		Kletterzentrum.importRoutes();
+
+		return res.send('I did it baby!');
+	},
 };
 
