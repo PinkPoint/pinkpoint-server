@@ -6,6 +6,10 @@
  */
 
 module.exports = {
-	
+	ascents: function (req, res) {
+		
+		
+		return res.send(req);
+	},	
 };
 
