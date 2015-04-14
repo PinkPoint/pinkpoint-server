@@ -7,9 +7,17 @@
 
 module.exports = {
 	ascents: function (req, res) {
-		
-		
-		return res.send(req);
-	},	
+    var userId = req.param('userId');
+
+    Ascent.find({'climber': userId})
+      .populate('route')
+      .exec(function (err, ascents) {
+      if (!err){
+        res.send(ascents);
+      } else {
+        res.send(error);
+      }
+    });
+	}
 };
 

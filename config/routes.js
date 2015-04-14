@@ -46,6 +46,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/users/:id/ascents': 'UserController.ascents'
+  '/users/:userId/ascents': 'UserController.ascents'
 
 };
