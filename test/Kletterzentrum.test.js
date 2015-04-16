@@ -7,25 +7,22 @@ describe('KletterzentrumService', function() {
 
 	it('should get routes', function(done) {
 		this.timeout(10000);
-		
-		var handleRoutes = function(routes) {
 
-			routes.should.be.array;
-			routes.length.should.be.greaterThan(0);
+    var assert = function(routes) {
 
-			done();
-		};
+      routes.should.be.array;
+      routes.length.should.be.greaterThan(0);
 
-		var options = {
-			callback: handleRoutes
-		};
+      done();
+    };
 
-		Kletterzentrum.getRoutes(options);
+		Kletterzentrum.getRoutes()
+      .then(assert);
 	});
 
 	it('should map routes', function(done) {
 		this.timeout(10000);
-		
+
 		var handleRoutes = function(routes) {
 			var mappedRoutes = Kletterzentrum.mapRoutes(routes);
 
@@ -35,19 +32,16 @@ describe('KletterzentrumService', function() {
 			done();
 		};
 
-		var options = {
-			callback: handleRoutes
-		};
-
-		Kletterzentrum.getRoutes(options);
+		Kletterzentrum
+      .getRoutes()
+      .then(handleRoutes);
 	});
 
 	it('should import routes', function(done) {
 		this.timeout(10000);
-		
-		Kletterzentrum.importRoutes();
 
-		// todo: how to wait for the end of the import?
-		// done();
+		Kletterzentrum
+      .importRoutes()
+      .then(done);
 	});
 });

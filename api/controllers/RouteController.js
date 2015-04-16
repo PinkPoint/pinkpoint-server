@@ -7,9 +7,17 @@
 
 module.exports = {
 	import: function (req, res) {
-		Kletterzentrum.importRoutes();
+    var success = function(){
+      return res.send('I did it baby!');
+    };
 
-		return res.send('I did it baby!');
-	},
+    var fail = function(e) {
+      return res.send('epic fail: ' + e);
+    };
+
+		Kletterzentrum.importRoutes()
+      .then(success)
+      .catch(fail);
+	}
 };
 
